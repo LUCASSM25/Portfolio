@@ -2,7 +2,11 @@
   //BUSCA OS DADOS
   //IRAR ACESSAR ARQUIVO CLASSEINSER.INC E ACESSAR A CLASSE inser
   require_once '../classeinser.inc';
-  $p = new inser("u562936743_acervo","localhost","u562936743_acervo","a#Z=10]aUQg8");
+  if ($_SERVER['HTTP_HOST'] == "lmdev.com.br") {
+    $p = new inser("u562936743_acervo","localhost","u562936743_acervo","a#Z=10]aUQg8");
+  }else{
+    $p = new inser("acervo","localhost","root","");
+  }
 ?>
 
 <!DOCTYPE html>
