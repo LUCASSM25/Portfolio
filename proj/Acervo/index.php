@@ -4,7 +4,7 @@
     //IRAR ACESSAR ARQUIVO CLASSEINSER.INC E ACESSAR A CLASSE inser
     require_once 'classeinser.inc';
     if ($_SERVER['HTTP_HOST'] == "lmdev.com.br") {
-    $p = new inser("u995545847_Acervo","localhost","u995545847_ls_acervo","v1QuGYK5m$");
+    $p = new inser("u562936743_acervo","localhost","u562936743_acervo","a#Z=10]aUQg8");
   }else{
     $p = new inser("acervo","localhost","root","");
   }
