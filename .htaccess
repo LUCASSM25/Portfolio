@@ -1,0 +1,11 @@
+
+
+
+
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW HOTLINKID:2LygbSnlER
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?lsdesenvolvimento.com.br/.*$      [NC]
+RewriteRule .*\.(zip|php)$ http://lsdesenvolvimento.com.br [R,NC]
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE 2LygbSnlER:HOTLINKID
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSM</title>
+    <link rel="stylesheet" href="./css/index.css?<? php echo rand(); ?>">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+               <a href="#Sobre">Sobre </a> 
+            </li>
+            <li>
+               <a href="#Portfolio">Portolio</a>  
+            </li>
+        </ul>
+    </header> 
+
+    
+    <Section class="section" id="one">
+        <img src="./img/foto.jpg" alt="Programador - Lucas"> 
+        <br><br>
+        <p id="barra">Desenvolvedor Full Stack</p>
+
+    </Section>
+
+    <Section  class="section" id="Sobre">
+            <p>Conhecimentos</p>
+            <p>Formado na faculdade Claretiano <br>
+                Analize e Desenvolvimento de Sistemas(Tecnologo)
+            </p>    <br>
+
+            <div id="know">
+                <a href="#">
+                    <img id="Claretiano" src="./img/Claretiano.JPG" alt="">
+                </a>
+            </div>
+    </Section>
+
+    <Section  class="section" id="Portfolio">
+        <p>PROJETOS DESENVOLVIDOS</p><br>
+    <div> 
+
+            <div class="snacks">
+                <a href="./proj/Acervo"> 
+                    <img src="./img/ACERVO.PNG" alt="">
+                    <div>Acervo de Livros</div>
+                </a>
+            </div>
+
+
+    
+        <div class="snacks">
+            <a href="./proj/PIZZAS/index.html"> 
+                <img src="./img/pizzas.JPG" alt="">
+                <div>Pizzaria</div>
+            </a>
+        </div>
+   
+
+
+        <div class="snacks">
+            <a href="./proj/BATERIA/index.html">
+                <img src="./img/Bateria.JPG" alt="">
+                <div>Bateria</div>
+            </a>  
+        </div>
+    
+        <div class="snacks">
+            <a href="./proj/CLIMA/index.html">  
+                <img src="./img/clima.JPG" alt="">
+                <div>Clima</div>
+            </a>
+        </div>
+
+        <div class="snacks">
+            <a href="./proj/RELOGIO/index.html">  
+                <img src="./img/relogio.JPG" alt="">
+                <div>Relógio</div>
+            </a>
+        </div>
+    </div>      
+   
+    </Section>
+    <footer>
+        <address>
+        <div>
+            <div><a href="#" class="fa fa-google"></a>   mouraolucas7@gmail.com <br></div>
+            <div><a href="#" class="fa fa-linkedin"></a> linkedin.com/in/lucas-sousa-925a89198</div>   
+        </div>
+        </address>
+    </footer>
+    <script>
+    //
+    function typeWriter(elemento){
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML='';
+        textoArray.forEach((letra, i) => {
+            setTimeout(function(){
+                elemento.innerHTML += letra ;
+            },130*i);
+        });
+    }
+    //
+    const titulo = document.querySelector('p');
+    typeWriter(titulo); 
+    </script>
+</body>
+</html>
