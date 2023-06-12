@@ -1,13 +1,12 @@
 <?php 
     session_start();
-
     date_default_timezone_set('America/Manaus');
 
     function conexao(){
       $servidor="localhost";
-      $banco="lzpizzaria";
-      $usuario="root";
-      $senha="";
+      $banco="u562936743_LZ";
+      $usuario="u562936743_Administrador";
+      $senha="AMgeGK*cX1";
 
         try {
 		      $conn = new PDO("mysql:host=$servidor;dbname=$banco", $usuario, $senha);
