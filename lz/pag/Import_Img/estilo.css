@@ -1,0 +1,52 @@
+body {
+	background-color:#EEEEEE;
+	margin:0;
+}
+#primeira {
+	background-color:#FFFFFF;
+	height:80px;
+	border-bottom:1px solid #CCCCCC;
+}
+#primeira #logo {
+	margin-top:23px;
+}
+#primeira #topo {
+	width:800px;
+	height:80px;
+	margin:auto;
+}
+.post {
+	background-color:#FFFFFF;
+	width:500px;
+	margin:auto;
+	margin-top:30px;
+	border:1px solid #CCCCCC;
+}
+#lightbox_fundo {
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	background-color:rgba(0, 0, 0, 0.7);
+	display:none;
+}
+#lightbox_foto {
+	position:absolute;
+	width:500px;
+	height:500px;
+	background-color:#FFF;
+	left:50%;
+	top:50%;
+	margin-left:-250px;
+	margin-top:-250px;
+	display:none;
+}
+.formulario {
+	width:500px;
+	height:100px;
+	margin:auto;
+	border:2px dotted #CCCCCC;
+	margin-top:20px;
+	padding:10px;
+}
